@@ -1,0 +1,29 @@
+<body>
+    <div class="container">
+        <h1>Add meg az utazásod adatait</h1>
+        <div class="grid1">
+            <input placeholder="Honnan?" type="text"[(ngModel)]
+            ="this.service.currentCar.cityFrom">
+            <input placeholder="Hova?" type="text"[(ngModel)]
+            ="this.service.currentCar.cityTo">
+        </div>
+        <div class="grid2">
+            <label for="">Mikor indulsz?</label>
+            <input placeholder="mikor?" type="date" [(ngModel)]
+             = "this.service.currentCar.date">
+             <label for="">Távolság</label>
+
+             <input placeholder="Távolság?" type="number" min="0" max="99999" [(ngModel)] 
+             = "this.service.currentCar.km">
+
+        </div>
+
+             <button (click)="this.service.createCar()">Utazás hozzáadása</button>
+        
+        
+    </div>
+</body>
+
+
+
+

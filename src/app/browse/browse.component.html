@@ -1,0 +1,30 @@
+<body>
+    <div class="container">
+        <div class="allcar">Már <strong>{{this.service.cars.length}}</strong> ajánlat közül választhat</div>
+
+        <table>
+            <tr>
+                <th>Honnan</th>
+                <th>Hova</th>
+                <th>dátum</th>
+                <th>km</th>
+                <th>utazó</th>
+                <th *ngIf="this.service.isLoggedIn()">Actions</th>
+            </tr>
+            <tr *ngFor="let car of this.service.cars">
+                <td>{{car.cityFrom}}</td>
+                <td>{{car.cityTo}}</td>
+                <td>{{car.date}}</td>
+                <td>{{car.km}} Km</td>
+                <td>{{car.owner.firstName}}
+                     {{car.owner.lastName}}
+                      ({{car.owner.email}})</td>
+                <td *ngIf="this.service.isLoggedIn()">
+                    <button *ngIf="this.service.isMySelf(car.owner.userName)"
+                    (click)="this.service.removeCar(car.id)">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>

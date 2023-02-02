@@ -1,0 +1,20 @@
+<body>
+        <div class="container">
+
+                <div class="leftSide">
+                        <h3>A <strong>legjobb</strong> utazás megosztó oldal</h3>
+                        <img class="img" src="../../assets/Mobile-login.png">
+                </div>
+
+                <div class="formdiv">
+                        <h2><strong>Bejelentkezés</strong></h2>
+                        <label>Felhasználónév:</label>
+                        <input type="text" [(ngModel)]="this.service.loginmodel.username"
+                                placeholder="felhasználónév" />
+                        <label>Jelszó:</label>
+                        <input type="password" [(ngModel)]="this.service.loginmodel.password" placeholder="jelszó" />
+                        <button (click)="this.service.login()">Belépés</button>
+
+                </div>
+        </div>
+</body>

@@ -1,0 +1,78 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding-top: 50px;
+    max-width: 100vmax;
+}
+.container strong{
+    color: red;
+}
+.allcar{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0, 0.5);
+    padding: 30px 0;
+    width: 79vw;
+    margin: -100px 0 50px 0;
+
+}
+table{
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #0f0f0f;
+    color:rgb(185, 185, 185);
+    line-height: 40px;
+    }
+    td, th{
+        padding: 10px;
+        
+    }
+    tr{
+        border: 0.1px solid rgb(125, 125, 125);
+
+    }
+  
+    th{
+        background-color: rgb(0, 0, 0);
+        position: sticky;
+        top:49px;
+        z-index: 10;
+    }
+    .allcar{
+        text-align: center;
+        margin: 20px 0;
+        font-size: 1.5em;
+    }
+    tr:nth-child(even) {
+        background-color: #282C35;
+        color: rgb(188, 188, 188);
+    }
+    button{
+        padding: 10px 20px;
+        background: #3131fa;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 30px;
+        font-weight: 1.2em;
+        transition: 0.5s ease-out;
+        cursor: pointer;
+    }
+    button:hover{
+        
+        background: rgb(220, 217, 217);
+        color: #1f1614;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-weight: 1.2em;
+        transition: 0.5s ease-out;
+        font-weight: bold;
+    }

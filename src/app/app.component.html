@@ -1,0 +1,14 @@
+<div class="navbar" *ngIf="!this.service.isLoggedIn()">
+  <a routerLink="/browse">Böngészés</a>
+  <a routerLink="/login">Bejelentkezés</a>
+</div>
+
+<div class="navbar" *ngIf="this.service.isLoggedIn()">
+  <a routerLink="/add">Hozzáadás</a>
+  <a routerLink="/browse">Böngészés</a>
+  <a routerLink="/logout">Kijelentkezés</a>
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
